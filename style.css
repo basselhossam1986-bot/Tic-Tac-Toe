@@ -852,3 +852,25 @@ footer span {
         transition-duration: .01ms !important;
     }
 }
+
+.myportofolio{
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 17px;
+    border: 1px solid #00e5ff35;
+    background: #00e5ff0c;
+    border-radius: 30px;
+    color: var(--cyan);
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+.Bassel{
+    padding: 10px 17px;
+    background: #00e5ff0c;
+    border-radius: 30px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
