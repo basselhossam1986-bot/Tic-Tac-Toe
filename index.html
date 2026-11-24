@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#060914">
+    <title>Tic Tac Toe Pro - Ultimate Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- MAIN MENU -->
+
+    <section class="main-menu" id="mainMenu">
+
+        <div class="menu-top">
+            <div class="logo">✕ <span>TIC TAC TOE</span> ○</div>
+            <div class="version">ULTIMATE EDITION v2.0</div>
+        </div>
+
+        <div class="menu-content">
+
+            <div class="menu-badge">
+                <span class="live-dot"></span>
+                NEXT LEVEL GAMING
+            </div>
+
+            <h1 class="menu-title">
+                TIC TAC<br>
+                <span>TOE PRO</span>
+            </h1>
+
+            <p class="menu-description">
+                Challenge your mind. Master the game.
+                Defeat the ultimate AI.
+            </p>
+
+            <div class="menu-card">
+
+                <h2>GAME SETTINGS</h2>
+                <p class="card-subtitle">Customize your experience</p>
+
+                <div class="menu-settings">
+
+                    <div class="menu-setting">
+                        <label>GAME MODE</label>
+                        <select id="modeSelect">
+                            <option value="ai">PLAYER VS AI</option>
+                            <option value="local">PLAYER VS PLAYER</option>
+                        </select>
+                    </div>
+
+                    <div class="menu-setting">
+                        <label>BOARD SIZE</label>
+                        <select id="sizeSelect">
+                            <option value="3">3 × 3</option>
+                            <option value="4">4 × 4</option>
+                        </select>
+                    </div>
+
+                    <div class="menu-setting" id="difficultySetting">
+                        <label>AI DIFFICULTY</label>
+                        <select id="difficultySelect">
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                            <option value="expert">Expert</option>
+                            <option value="impossible">Impossible</option>
+                        </select>
+                    </div>
+
+                    <div class="menu-setting" id="symbolSetting">
+                        <label>YOUR SYMBOL</label>
+                        <select id="symbolSelect">
+                            <option value="X">X - Cyan</option>
+                            <option value="O">O - Purple</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <button class="start-btn" id="startBtn">
+                    <span>START GAME</span>
+                    <span class="start-arrow">➜</span>
+                </button>
+
+                <div class="menu-footer">
+                    <span>⚡ SMART AI</span>
+                    <span>✦ PREMIUM EXPERIENCE</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="menu-bottom">
+            <span>TIC TAC TOE PRO</span>
+            <span>DESIGNED FOR GAMERS © 2026</span>
+        </div>
+
+    </section>
+
+
+    <!-- GAME SCREEN -->
+
+    <section class="game-screen hidden" id="gameScreen">
+
+        <header>
+            <div class="logo">✕ <span>TIC TAC TOE</span> ○</div>
+
+            <div class="header-actions">
+                <button id="soundBtn" class="header-btn">
+                    🔊 SOUND
+                </button>
+
+                <button id="menuBtn" class="header-btn">
+                    ☰ MENU
+                </button>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="tag">ULTIMATE GAMING EXPERIENCE</div>
+            <h1>TIC TAC <span>TOE</span></h1>
+            <p class="subtitle" id="gameSubtitle">
+                Challenge your mind. Defeat the AI.
+            </p>
+        </section>
+
+        <main class="game-container">
+
+            <div class="game-info">
+                <div>
+                    <span class="info-label">GAME MODE</span>
+                    <strong id="modeDisplay">PLAYER VS AI</strong>
+                </div>
+
+                <div>
+                    <span class="info-label">DIFFICULTY</span>
+                    <strong id="difficultyDisplay">IMPOSSIBLE</strong>
+                </div>
+
+                <div>
+                    <span class="info-label">BOARD</span>
+                    <strong id="boardDisplay">3 × 3</strong>
+                </div>
+            </div>
+
+            <div class="scoreboard">
+
+                <div class="score-card active" id="playerX">
+                    <span class="player-symbol x">X</span>
+                    <span class="player-name" id="labelX">PLAYER X</span>
+                    <strong id="scoreX">0</strong>
+                </div>
+
+                <div class="score-card" id="playerO">
+                    <span class="player-symbol o">O</span>
+                    <span class="player-name" id="labelO">AI PLAYER</span>
+                    <strong id="scoreO">0</strong>
+                </div>
+
+                <div class="score-card">
+                    <span class="player-name">DRAWS</span>
+                    <strong id="draws">0</strong>
+                </div>
+
+            </div>
+
+            <div class="status" id="status">
+                <span class="status-dot"></span>
+                PLAYER X'S TURN
+            </div>
+
+            <div class="board" id="board"></div>
+
+            <div class="result" id="result">
+                <div class="result-icon" id="resultIcon">🏆</div>
+                <h2 id="resultTitle">YOU WIN!</h2>
+                <p id="resultText">Congratulations!</p>
+            </div>
+
+            <div class="actions">
+                <button id="restartBtn" class="primary-btn">
+                    ↻ NEW GAME
+                </button>
+
+                <button id="resetScoreBtn" class="secondary-btn">
+                    RESET SCORES
+                </button>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>POWERED BY SMART AI <span>•</span> TIC TAC TOE PRO</p>
+        </footer>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
